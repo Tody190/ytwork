@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2023/12/15 14:55
 # @Author  : YangTao
-# @File    : cgtw_show.py
+# @File    : data_checker.py
 
 
 import os
@@ -30,11 +30,11 @@ from PySide2 import QtGui
 import cgtw2
 
 
-class Info_Widget(ui_dialog):
+class Info_Widget(ui_widget):
     def __init__(self, parent=None):
         super(Info_Widget, self).__init__(parent)
-        self.setWindowTitle(u"信息查看器")
-        self.setWindowIcon(QtGui.QIcon(os.path.join(os.path.dirname(__file__), u"view_icon.png")))
+        self.setWindowTitle(u"CGTW信息查看器")
+        self.setWindowIcon(QtGui.QIcon(os.path.join(os.path.dirname(__file__), u"logo.png")))
         self.main_layout = QtWidgets.QVBoxLayout(self)
         text_browser = QtWidgets.QTextBrowser()
         self.main_layout.addWidget(text_browser)
