@@ -1,0 +1,18 @@
+
+FKNeck_M        IKhybridSplineNeck1_M
+FKNeck2_M       IKhybridSplineNeck2_M
+FKHead_M        IKhybridSplineNeck3_M
+M_Neck01_ctrl   IKSplineNeck1_M
+M_Neck02_ctrl   IKSplineNeck2_M
+M_Neck03_ctrl   IKSplineNeck3_M
+==============================================================================================================================
+M_Neck01_ctrl    IKSplineNeck1_M     pointConstraint -offset 0 0 0 -weight 1
+M_Neck01_ctrl    IKSplineNeck1_M     parentConstraint -mo -skipTranslate x -skipTranslate y  -skipTranslate z -weight 1
+==============================================================================================================================
+M_Neck02_ctrl    IKSplineNeck2_M     pointConstraint -offset 0 0 0 -weight 1   
+M_Neck02_ctrl    IKSplineNeck2_M     parentConstraint -mo -skipTranslate x -skipTranslate y -skipTranslate z -skipRotate x -weight 1   
+==============================================================================================================================
+M_Neck03_ctrl    IKSplineNeck3_M     pointConstraint -offset 0 0 0 -weight 1    
+M_Neck03_ctrl    IKSplineNeck3_M     parentConstraint -mo -skipTranslate x -skipTranslate y  -skipTranslate z  -weight 1    
+==============================================================================================================================
+

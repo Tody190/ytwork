@@ -1,0 +1,10 @@
+import sys
+
+p = r'W:\projects\nzt\misc\users\yangtao\sxbb_automatic_constraint'
+
+p in sys.path or sys.path.append(p)
+
+import sxbb_ac_main
+reload(sxbb_ac_main)
+sam = sxbb_ac_main.MainUI()
+sam.show()

@@ -1,0 +1,75 @@
+Master_ctrl | Master_ctrl | parentConstraint -weight 1
+Local_ctrl | Local_ctrl | parentConstraint -weight 1
+Root_ctrl | Root_ctrl | parentConstraint -weight 1
+RootX_M | RootX_M | parentConstraint -weight 1
+IKhybridSpine1_M | IKhybridSpine1_M | parentConstraint -weight 1
+IKhybridSpine2_M | IKhybridSpine2_M | parentConstraint -weight 1
+IKhybridSpine3_M | IKhybridSpine3_M | parentConstraint -weight 1
+IKSpine1_M | IKSpine1_M | parentConstraint -weight 1
+IKSpine2_M | IKSpine2_M | parentConstraint -weight 1
+IKSpine3_M | IKSpine3_M | parentConstraint -weight 1
+IKSplineNeck1_M | M_Neck01_ctrl | pointConstraint -offset 0 0 0 -weight 1
+IKSplineNeck1_M | M_Neck01_ctrl | parentConstraint -mo -skipTranslate x -skipTranslate y  -skipTranslate z -weight 1
+IKSplineNeck2_M | M_Neck02_ctrl | pointConstraint -offset 0 0 0 -weight 1
+IKSplineNeck2_M | M_Neck02_ctrl | parentConstraint -mo -skipTranslate x -skipTranslate y -skipTranslate z -skipRotate x -weight 1
+IKSplineNeck3_M | M_Neck03_ctrl | pointConstraint -offset 0 0 0 -weight 1
+IKSplineNeck3_M | M_Neck03_ctrl | parentConstraint -mo -skipTranslate x -skipTranslate y  -skipTranslate z  -weight 1
+FKScapula_L | FKScapula_L | parentConstraint -mo -weight 1
+FKShoulder_L | FKShoulder_L | orientConstraint  -weight 1
+FKElbow_L | FKElbow_L | orientConstraint -mo -weight 1
+FKWrist_L | FKWrist_L | orientConstraint -mo -weight 1
+FKFingers1_L | FKFingers1_L | orientConstraint -mo -weight 1
+IKLegFront_L | IKLegFront_L | parentConstraint  -weight 1
+PoleLegFront_L | PoleLegFront_L | pointConstraint -offset 0 0 0  -weight 1
+RollFingers1_L | RollFingers1_L | orientConstraint -mo -weight 1
+IKFingers1_L | IKFingers1_L | orientConstraint -mo -weight 1
+RollfrontHeel_L | RollfrontHeel_L | orientConstraint -mo -weight 1
+RollFingers2_L | RollFingers2_L | orientConstraint -mo -weight 1
+FKScapula_R | FKScapula_R | parentConstraint -mo -weight 1
+FKShoulder_R | FKShoulder_R | orientConstraint  -weight 1
+FKElbow_R | FKElbow_R | orientConstraint -mo -weight 1
+FKWrist_R | FKWrist_R | orientConstraint -mo -weight 1
+FKFingers1_R | FKFingers1_R | orientConstraint -mo -weight 1
+IKLegFront_R | IKLegFront_R | parentConstraint  -weight 1
+PoleLegFront_R | PoleLegFront_R | pointConstraint -offset 0 0 0  -weight 1
+RollFingers1_R | RollFingers1_R | orientConstraint -mo -weight 1
+IKFingers1_R | IKFingers1_R | orientConstraint -mo -weight 1
+RollfrontHeel_R | RollfrontHeel_R | orientConstraint -mo -weight 1
+RollFingers2_R | RollFingers2_R | orientConstraint -mo -weight 1
+FKHipA_L | FKHip_L | parentConstraint -mo -weight 1
+FKKnee_L | FKKnee_L | orientConstraint  -weight 1
+FKAnkle_L | FKAnkle_L | orientConstraint -mo -weight 1
+FKToes1_L | FKToes1_L | orientConstraint -mo -weight 1
+FKHipA_R | FKHip_R | parentConstraint -mo -weight 1
+FKKnee_R | FKKnee_R | orientConstraint  -weight 1
+FKAnkle_R | FKAnkle_R | orientConstraint -mo -weight 1
+FKToes1_R | FKToes1_R | orientConstraint -mo -weight 1
+IKLegBack_L | IKLegBack_L | parentConstraint  -weight 1
+PoleLegBack_L | PoleLegBack_L | pointConstraint -offset 0 0 0  -weight 1
+RollToes1_L | RollToes1_L | orientConstraint -mo -weight 1
+IKToes1_L | IKToes1_L | orientConstraint -mo -weight 1
+RollbackHeel_L | RollbackHeel_L | orientConstraint -mo -weight 1
+RollToes2_L | RollToes2_L | orientConstraint -mo -weight 1
+IKLegBack_R | IKLegBack_R | parentConstraint  -weight 1
+PoleLegBack_R | PoleLegBack_R | pointConstraint -offset 0 0 0  -weight 1
+RollToes1_R | RollToes1_R | orientConstraint -mo -weight 1
+IKToes1_R | IKToes1_R | orientConstraint -mo -weight 1
+RollbackHeel_R | RollbackHeel_R | orientConstraint -mo -weight 1
+RollToes2_R | RollToes2_R | orientConstraint -mo -weight 1
+tailFK_1_ctrl | fk_Tail0_M_fkCtrl | parentConstraint -mo -weight 1
+tailIK_2_ctrl | FKTail1_M | parentConstraint -mo -weight 1
+tailbottomIK_3_ctrl | fk_Tail3_M_fkCtrl | parentConstraint -mo -weight 1
+tailbottomIK_4_ctrl | FKTail4_M | parentConstraint -mo -weight 1
+tailbottomIK_5_ctrl | FKTail5_M | parentConstraint -mo -weight 1
+tailbottomIK_6_ctrl | fk_Tail6_M_fkCtrl | parentConstraint -mo -weight 1
+tailbottomIK_7_ctrl | FKTail7_M | parentConstraint -mo -weight 1
+tailbottomIK_8_ctrl | fk_Tail8_M_fkCtrl | parentConstraint -mo -weight 1
+tailIK_5_ctrl | FKTail9_M | parentConstraint -mo -weight 1
+tailbottomIK_11_ctrl | FKTail10_M | parentConstraint -mo -weight 1
+FKRoot_M | FKRoot_M | parentConstraint -mo -weight 1   
+FKSpine1_M | FKSpine1_M | pointConstraint -offset 0 0 0 -weight 1    
+FKSpine1_M | FKSpine1_M | parentConstraint -mo -skipTranslate x -skipTranslate y  -skipTranslate z  -weight 1  
+FKSpine2_M | FKSpine2_M | parentConstraint -mo -weight 1  
+FKChest_M | FKChest_M | pointConstraint -offset 0 0 0 -weight 1   
+FKChest_M | FKChest_M | parentConstraint -mo -skipTranslate x -skipTranslate y  -skipTranslate z  -weight 1  
+HipSwinger_M | HipSwinger_M | orientConstraint -mo -weight 1     
